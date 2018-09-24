@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zhangyanran201800924.bwie.com.jineng.activity.ShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入内容"/>
+        </FrameLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_btn"
+            android:text="搜索"
+            android:background="#808080"/>
+    </LinearLayout>
+    <com.fyales.tagcloud.library.TagCloudLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:tagSpacing="15dp"
+        app:lineSpacing="10dp"/>
+</LinearLayout>
